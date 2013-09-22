@@ -1148,7 +1148,8 @@ nav .facebook a {
 }
 
 .content .bottom-lockup input.email:focus {
-  background-color: rgba(255, 255, 255, 0.6);
+  text-transform: none;
+  background-color: rgba(255, 255, 255, 0.2);
   border-left: 8px solid #ffffff;
 }
 
