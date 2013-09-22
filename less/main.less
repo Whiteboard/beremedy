@@ -10,3 +10,196 @@ Some rules and guidelines:
 	don't abuse less nesting
 
 */
+
+//mixins
+@white: #fff;
+@orange: #ffae00;
+@blue: #009cb8;
+
+
+//base styles
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Avenir Next', sans-serif;
+	color: @white;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	i {
+		color: @white;
+	}
+}
+
+//structural styles
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	min-height: 780px;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	min-height: 780px;
+	background-color: rgba(0,156,184,0.86);
+	overflow: hidden;
+}
+
+.wrap {
+	width: 85%;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+
+//nav
+nav {
+	height: 130px;
+	width: 100%;
+	border-bottom: 1px solid @white;
+	.logo {
+		background-image: url('../img/logo.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 150px;
+		height: 38px;
+		position: relative;
+		top: 50px;
+		left: 0px;
+	}
+	.social {
+		width: 130px;
+		height: 130px;
+		border-left: 1px solid @white;
+		position: absolute;
+		top: 0;
+		background-color: rgba(255,255,255,0);
+		transition: all .3s ease-in;
+		&:hover {
+			background-color: rgba(255,255,255,0.4);
+		}
+		a {
+			padding: 50px 50px;
+			width: 130px;
+			height: 130px;
+
+		}
+	}
+	.twitter {
+		right: 0;
+	}
+	.facebook {
+		right: 131px;
+		a {
+			padding-left: 60px;
+		}
+	}
+}
+
+
+//main content 
+.content {
+	padding-top: 80px;
+	.top-lockup {
+		h4 {
+			margin-left: 5px;
+			margin-bottom: 15px;
+			font-size: 1.7em;
+			font-weight: 600;
+			opacity: 0.8;
+		}
+		h1 {
+			font-size: 7em;
+			text-transform: uppercase;
+			font-weight: 700;
+			line-height: 1em;
+		}
+	}
+
+	.bottom-lockup {
+		padding-top: 90px;
+		p {
+			font-weight: 500;
+		}
+
+
+		.mailchimp-wrap {
+			width: 400px;
+			height: 35px;
+		}
+
+	//form styling
+		input {
+			border: none;
+		}
+		input.email {
+			margin-top: 15px;
+			width: 250px;
+			height: 35px;
+			padding: 20px;
+			text-transform: uppercase;
+			font-weight: 500;
+			border-left: 3px solid @white;
+			color: @white;
+			background-color: rgba(255,255,255,0.3);
+			transition: all .3s ease-in;
+			float: left;
+			&:hover {
+				background-color: rgba(255,255,255,0.4);
+				border-left: 6px solid @white;
+			}
+			&:focus {
+				background-color: rgba(255,255,255,0.6);
+				border-left: 8px solid @white;
+			}
+		}
+		input.submit {
+			background-color: @orange;
+			font-weight: 600;
+			color: @white;
+			float: left;
+			padding: 10px 20px;
+			height: 40px;
+			margin-top: 15px;
+			margin-left: 15px;
+			border: 2px solid @orange;
+			transition: all .3s ease-in;
+			&:hover {
+				background-color: rgba(255,173,60,0);
+				color: @orange;
+				border: 2px solid @white;
+			}
+		}
+	}
+
+	a.current-site {
+		margin-top: -20px;
+		color: @white;
+		border: 1px solid rgba(0,156,184,0);
+		border-bottom: 1px solid @white;
+		float: right;
+		text-decoration: none;
+		padding: 8px;
+		padding-bottom: 6px;
+		transition: all .3s ease-in;
+		&:hover {
+			border: 1px solid @white;
+			color: rgba(255,255,255,0.8);
+		}
+	}
+}
