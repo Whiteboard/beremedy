@@ -1239,19 +1239,15 @@ nav .facebook a {
   }
   .content .bottom-lockup input.email {
     float: none;
-    width: 80%;
-    min-width: 280px;
+    width: 90%;
     margin: 0 auto;
     margin-top: 20px;
-    margin-right: 10px;
   }
   .content .bottom-lockup input.submit {
     float: none;
-    width: 80%;
-    min-width: 280px;
+    width: 90%;
     margin: 0 auto;
     margin-top: 10px;
-    margin-right: 10px;
   }
   .content a.current-site {
     float: none;
