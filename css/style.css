@@ -1145,19 +1145,19 @@ nav .facebook a {
   color: #ffffff;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.3);
-  border-left: 3px solid #ffffff;
+  border-left: 3px solid #ffae00;
   transition: all 0.3s ease-in;
 }
 
 .content .bottom-lockup input.email:hover {
   background-color: rgba(255, 255, 255, 0.4);
-  border-left: 6px solid #ffffff;
+  border-left: 6px solid #ffae00;
 }
 
 .content .bottom-lockup input.email:focus {
   text-transform: none;
   background-color: rgba(255, 255, 255, 0.2);
-  border-left: 8px solid #ffffff;
+  border-left: 8px solid #ffae00;
 }
 
 .content .bottom-lockup input.submit {
