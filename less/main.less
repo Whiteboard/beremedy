@@ -149,6 +149,7 @@ nav {
 	//form styling
 		input {
 			border: none;
+			-webkit-box-sizing: border-box;
 		}
 		input.email {
 			margin-top: 15px;
@@ -259,10 +260,12 @@ nav {
 
 		}
 		.bottom-lockup {
-				//signup field
+				width: 90%;
 
+				//signup field
 				input.email {
 					width: 90%;
+					max-width: 400px;
 					float: none;
 					margin: 0 auto;
 					margin-top: 20px;
@@ -270,6 +273,7 @@ nav {
 			
 				input.submit {
 					width: 90%;
+					max-width: 400px;
 					float: none;
 					margin: 0 auto;
 					margin-top: 10px;
@@ -285,6 +289,22 @@ nav {
 	}
 	//content end
 
+}
 
+@media screen and (max-width: 400px) {
+	//content
+	.content {
+		max-width: 300px;
+		.bottom-lockup {
+				//signup field
+				input.email {
+					max-width: 290px;
+				}
+			
+				input.submit {
+					max-width: 290px;
+				}
+		}
+	}
 
 }

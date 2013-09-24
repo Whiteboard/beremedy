@@ -1132,6 +1132,7 @@ nav .facebook a {
 
 .content .bottom-lockup input {
   border: none;
+  -webkit-box-sizing: border-box;
 }
 
 .content .bottom-lockup input.email {
@@ -1237,15 +1238,20 @@ nav .facebook a {
   .content .top-lockup h1 {
     font-size: 3em;
   }
+  .content .bottom-lockup {
+    width: 90%;
+  }
   .content .bottom-lockup input.email {
     float: none;
     width: 90%;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: 20px;
   }
   .content .bottom-lockup input.submit {
     float: none;
     width: 90%;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: 10px;
   }
@@ -1253,6 +1259,18 @@ nav .facebook a {
     float: none;
     margin: 0 auto;
     margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    max-width: 300px;
+  }
+  .content .bottom-lockup input.email {
+    max-width: 290px;
+  }
+  .content .bottom-lockup input.submit {
+    max-width: 290px;
   }
 }
 
