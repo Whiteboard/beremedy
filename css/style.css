@@ -1137,9 +1137,9 @@ nav .facebook a {
 
 .content .bottom-lockup input.email {
   float: left;
-  width: 250px;
-  height: 35px;
-  padding: 20px;
+  width: 280px;
+  height: 45px;
+  padding: 30px;
   margin-top: 15px;
   font-weight: 500;
   color: #ffffff;
@@ -1162,8 +1162,8 @@ nav .facebook a {
 
 .content .bottom-lockup input.submit {
   float: left;
-  height: 40px;
-  padding: 10px 20px;
+  height: 60px;
+  padding: 20px 20px;
   margin-top: 15px;
   margin-left: 15px;
   font-weight: 600;
