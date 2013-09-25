@@ -999,7 +999,9 @@ Some rules and guidelines:
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -1067,7 +1069,9 @@ nav .social {
   height: 130px;
   background-color: rgba(255, 255, 255, 0);
   border-left: 1px solid #ffffff;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
 }
 
 nav .social:hover {
@@ -1146,7 +1150,9 @@ nav .facebook a {
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.3);
   border-left: 3px solid #ffae00;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
 }
 
 .content .bottom-lockup input.email:hover {
@@ -1170,7 +1176,9 @@ nav .facebook a {
   color: #ffffff;
   background-color: #ffae00;
   border: 2px solid #ffae00;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
 }
 
 .content .bottom-lockup input.submit:hover {
@@ -1183,13 +1191,15 @@ nav .facebook a {
   float: right;
   padding: 8px;
   padding-bottom: 6px;
-  margin-top: 20px;
+  margin-top: 4px;
   margin-right: 30px;
   color: #ffffff;
   text-decoration: none;
   border: 1px solid rgba(0, 156, 184, 0);
   border-bottom: 1px solid #ffffff;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+     -moz-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
 }
 
 .content a.current-site:hover {
