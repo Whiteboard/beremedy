@@ -9,6 +9,13 @@
 #   perishablepress.com/press/2006/01/10/stupid-htaccess-tricks/
 #   Sample .htaccess file of CMS MODx: modxcms.com
 
+# ---------------------------------------
+# A redirect to the 'Coming Soon' page.
+# ---------------------------------------
+
+DirectoryIndex index.html 
+
+
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users
